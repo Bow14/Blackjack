@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class GameManger : MonoBehaviour
 {
+	// https://www.youtube.com/watch?v=vVNIoARxH6M&t=1019s
 
 	public Button dealBtn;
 	public Button hitBtn;
@@ -12,12 +13,15 @@ public class GameManger : MonoBehaviour
 	public Button betBtn;
 
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+	{
+		dealBtn.onClick.AddListener(() => dealClicked());
+		//hitBtn.onClick.AddListener(() => hitClicked());
+		//standBtm.onClick.AddListener(() => standClicked());
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+	void dealClicked()
+	{
+			
 	}
 }
