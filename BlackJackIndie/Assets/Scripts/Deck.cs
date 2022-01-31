@@ -16,8 +16,20 @@ public class Deck : MonoBehaviour
 	}
 	
 	// Update is called once per frame
-	void getCardValues () 
+	void getCardValues ()
 	{
-		
+		int num = 0;
+		for (int i = 0; i < cardSprites.Length; i++)
+		{
+			num = i;
+			num %= 13;
+			if (num > 10 || num == 0)
+			{
+				num = 10;
+				
+			}
+
+			cardValues[i] = num++;
+		}
 	}
 }
