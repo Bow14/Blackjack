@@ -6,9 +6,10 @@
     <e p="C:\Users\huffn\Documents\Git repo\BlackJack\BlackJack\BlackJackIndie" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="GameManger.cs" t="Include" />
+        <e p="CardScript.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Deck.cs" t="Include" />
+          <e p="GameManger.cs" t="Include" />
         </e>
       </e>
       <e p="BlackJackIndie.sln" t="IncludeFlat" />

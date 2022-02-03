@@ -45,14 +45,21 @@ public class Deck : MonoBehaviour
 	{
 		for (int i = cardSprites.Length - 1; i > 0; --i)
 		{
-			int j = Mathf.FloorToInt(Random.Range(0.0f, 1.0f) * cardSprites.Length - 1) + 1;
+			int j = Mathf.FloorToInt(Random.Range(0.0f, 1.0f) * cardSprites.Length - 1) + 1; 
+			//This line above gives a random number from the array
 			Sprite face = cardSprites[i];
 			cardSprites[i] = cardSprites[j];
+			// J is the random number result
 			cardSprites[j] = face;
 
 			int value = cardValues[i];
 			cardValues[i] = cardValues[j];
 			cardValues[j] = value;
 		}
+	}
+
+	public int dealCard()
+	{
+		return 0;
 	}
 }
