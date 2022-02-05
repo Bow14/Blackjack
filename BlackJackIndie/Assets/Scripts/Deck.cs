@@ -58,8 +58,15 @@ public class Deck : MonoBehaviour
 		}
 	}
 
-	public int dealCard()
+	public int dealCard(CardScript cardScript)
 	{
-		return 0;
+		cardScript.SetSprite(cardSprites[currentIndex]);
+		cardScript.setValue(cardValues[currentIndex++]);
+		return cardScript.getValueOfCard();
+	}
+
+	public Sprite getCardBack()
+	{
+		return cardSprites[0];
 	}
 }

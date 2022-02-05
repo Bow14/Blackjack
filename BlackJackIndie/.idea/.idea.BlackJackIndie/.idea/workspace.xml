@@ -20,8 +20,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/GameManger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Deck.cs" />
         <option value="$PROJECT_DIR$/Assets/CardScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Deck.cs" />
       </list>
     </option>
   </component>
@@ -87,6 +87,7 @@
       <workItem from="1643776233111" duration="2453000" />
       <workItem from="1643858764526" duration="449000" />
       <workItem from="1643859609832" duration="1548000" />
+      <workItem from="1644035020200" duration="2987000" />
     </task>
     <servers />
   </component>
