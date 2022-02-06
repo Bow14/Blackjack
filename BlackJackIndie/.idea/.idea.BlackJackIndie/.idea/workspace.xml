@@ -15,6 +15,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Deck.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CardScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PlayerScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -22,6 +23,7 @@
         <option value="$PROJECT_DIR$/Assets/GameManger.cs" />
         <option value="$PROJECT_DIR$/Assets/CardScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Deck.cs" />
+        <option value="$PROJECT_DIR$/Assets/PlayerScript.cs" />
       </list>
     </option>
   </component>
@@ -88,6 +90,7 @@
       <workItem from="1643858764526" duration="449000" />
       <workItem from="1643859609832" duration="1548000" />
       <workItem from="1644035020200" duration="2987000" />
+      <workItem from="1644135088011" duration="2349000" />
     </task>
     <servers />
   </component>
