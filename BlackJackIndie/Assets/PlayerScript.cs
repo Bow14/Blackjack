@@ -29,8 +29,24 @@ public class PlayerScript : MonoBehaviour {
 		
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
+	//Add a hand to the player and dealers hand
+
+	public int getCard()
+	{
+		//Grab a card and assigns sprite value to said card
+		int cardValue = deckScript.dealCard((hand[cardIndex].GetComponent<CardScript>()));
+		//Show card on game screen with rendering
+		hand[cardIndex].GetComponent<Renderer>().enabled = true;
+		//add card value to the running total of the hand
+		handValue += cardValue;
+
+		if (cardValue == 1)
+		{
+			aceList.Add(hand[cardIndex].GetComponent<CardScript>());
+		}
+
+		//aceCheck();
+		cardIndex++;
+		return handValue;
 	}
 }
