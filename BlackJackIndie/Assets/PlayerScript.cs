@@ -21,12 +21,13 @@ public class PlayerScript : MonoBehaviour {
 	public GameObject[] hand;
 	//index of next card to be turned over
 	public int cardIndex = 0;
-	public int aceCount = 0;
 	//Tracking aces for 1 to 11 conversions
 	private List<CardScript> aceList = new List<CardScript>();
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+	{
+		getCard();
+		getCard();
 	}
 	
 	//Add a hand to the player and dealers hand
@@ -44,7 +45,8 @@ public class PlayerScript : MonoBehaviour {
 		{
 			aceList.Add(hand[cardIndex].GetComponent<CardScript>());
 		}
-
+		
+		//Check if we should use the 11 or 1 on a blackjack hand
 		//aceCheck();
 		cardIndex++;
 		return handValue;
