@@ -26,7 +26,9 @@ public class GameManger : MonoBehaviour
 
 	void dealClicked()
 	{
+		GameObject.Find("Deck").GetComponent<Deck>().cardShuffle();
 		PlayerScript.StartHand();
+		dealerScript.StartHand();
 	}
 	void hitClicked()
 	{
