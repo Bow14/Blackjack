@@ -24,7 +24,7 @@ public class PlayerScript : MonoBehaviour {
 	//Tracking aces for 1 to 11 conversions
 	private List<CardScript> aceList = new List<CardScript>();
 	// Use this for initialization
-	void Start ()
+	public void StartHand ()
 	{
 		getCard();
 		getCard();

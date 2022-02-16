@@ -13,19 +13,27 @@ public class GameManger : MonoBehaviour
 	public Button betBtn;
 	
 	// access the players hand as well as the dealer
-	private PlayerScript PlayerScript;
-	private PlayerScript dealerScript;
+	public PlayerScript PlayerScript;
+	public PlayerScript dealerScript;
 
 	// Use this for initialization
-	public void Starthand ()
+	public void Start()
 	{
 		dealBtn.onClick.AddListener(() => dealClicked());
-		//hitBtn.onClick.AddListener(() => hitClicked());
-		//standBtm.onClick.AddListener(() => standClicked());
+		hitBtn.onClick.AddListener(() => hitClicked());
+		standBtm.onClick.AddListener(() => standClicked());
 	}
 
 	void dealClicked()
 	{
-		//PlayerScript.StartHand();
+		PlayerScript.StartHand();
+	}
+	void hitClicked()
+	{
+		PlayerScript.StartHand();
+	}
+	void standClicked()
+	{
+		PlayerScript.StartHand();
 	}
 }

@@ -13,6 +13,7 @@ public class Deck : MonoBehaviour
 
 	// Use this for initialization
 	void Start () {
+		getCardValues();
 		
 	}
 	
