@@ -11,6 +11,9 @@ public class GameManger : MonoBehaviour
 	public Button hitBtn;
 	public Button standBtm;
 	public Button betBtn;
+	public Text standBtmText;
+
+	private int standClicks = 0;
 	
 	// access the players hand as well as the dealer
 	public PlayerScript PlayerScript;
@@ -32,10 +35,25 @@ public class GameManger : MonoBehaviour
 	}
 	void hitClicked()
 	{
-		PlayerScript.StartHand();
+		// Check that there is still room on the table
+		if (PlayerScript.getCard() <= 10)
+		{
+			PlayerScript.getCard();
+		}
 	}
 	void standClicked()
 	{
-		PlayerScript.StartHand();
+		standClicks++;
+		if (standClicks > 1) Debug.Log("End function");
+		hitDealer();
+		standBtmText.text = "Call";
+		{
+			
+		}
+	}
+
+	private void hitDealer()
+	{
+		throw new System.NotImplementedException();
 	}
 }
