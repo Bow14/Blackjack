@@ -54,6 +54,10 @@ public class GameManger : MonoBehaviour
 
 	private void hitDealer()
 	{
-		throw new System.NotImplementedException();
+		while (dealerScript.handValue < 16 && dealerScript.cardIndex < 10)
+		{
+			dealerScript.getCard();
+			//dealerscore
+		}
 	}
 }
