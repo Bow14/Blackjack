@@ -51,4 +51,33 @@ public class PlayerScript : MonoBehaviour {
 		cardIndex++;
 		return handValue;
 	}
+// search for needed ace conversions, 1 to 11 or vice versa
+	public void AceCheck()
+	{
+		// for each ace in the list check
+		foreach (CardScript ace in aceList)
+		{
+			if (handValue + 10 < 22 && ace.getValueOfCard() == 1)
+			{
+				// if converting adjust card object value and hand
+				ace.setValue(11);
+				handValue += 10;
+			}else if (handValue > 21 && ace.getValueOfCard() == 11)
+			{
+				// if converting, adjust gameobject and hand value
+				ace.setValue(1);
+				handValue -= 10;
+			}
+		}
+	}
+// bet adding or subtracting from money
+	public void AdjustMoney(int amount)
+	{
+		money += amount;
+	}
+//Output players current money amount
+	public int GetMoney()
+	{
+		return money;
+	}
 }

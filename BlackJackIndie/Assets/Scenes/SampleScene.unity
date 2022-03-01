@@ -343,14 +343,14 @@ MonoBehaviour:
   hitBtn: {fileID: 1346165188}
   standBtm: {fileID: 440867044}
   betBtn: {fileID: 35861081}
-  standBtmText: {fileID: 0}
+  standBtmText: {fileID: 2066907141}
   PlayerScript: {fileID: 67937030}
   dealerScript: {fileID: 194376489}
-  scoreText: {fileID: 0}
-  dealerScoreText: {fileID: 0}
-  betsText: {fileID: 0}
-  cashText: {fileID: 0}
-  hideCard: {fileID: 0}
+  scoreText: {fileID: 1812961017}
+  dealerScoreText: {fileID: 1968519689}
+  betsText: {fileID: 486400139}
+  cashText: {fileID: 478147699}
+  hideCard: {fileID: 1450872338}
   pot: 0
 --- !u!4 &59209280
 Transform:
@@ -402,7 +402,7 @@ Transform:
   - {fileID: 928308268}
   - {fileID: 1250269884}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &67937030
 MonoBehaviour:
@@ -561,7 +561,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &194376487
 GameObject:
@@ -600,7 +600,7 @@ Transform:
   - {fileID: 58625268}
   - {fileID: 366645375}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &194376489
 MonoBehaviour:
@@ -697,8 +697,7 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0.82, y: 14.14, z: 0.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1071737183}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
@@ -879,7 +878,7 @@ RectTransform:
   - {fileID: 440867043}
   - {fileID: 35861080}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1962,12 +1961,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1071737182}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -38.243, y: 12.878, z: 88.897}
-  m_LocalScale: {x: 9.106031, y: 11.750179, z: 12.495174}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -37.423, y: -74.75701, z: 13.007991}
+  m_LocalScale: {x: 9.106031, y: 11.750183, z: 12.495182}
   m_Children: []
-  m_Father: {fileID: 282840814}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &1071737184
 MonoBehaviour:
@@ -2139,7 +2138,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1244751032
 GameObject:
@@ -2685,7 +2684,7 @@ Transform:
   m_LocalScale: {x: 9.106031, y: 11.750179, z: 12.495174}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1595896236
 GameObject:
@@ -3031,7 +3030,7 @@ GameObject:
   - component: {fileID: 1812961018}
   - component: {fileID: 1812961017}
   m_Layer: 5
-  m_Name: HandText
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3353,7 +3352,7 @@ GameObject:
   - component: {fileID: 1968519690}
   - component: {fileID: 1968519689}
   m_Layer: 5
-  m_Name: Dealers hand
+  m_Name: DealersScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3503,7 +3502,7 @@ RectTransform:
   m_Children:
   - {fileID: 125515939}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

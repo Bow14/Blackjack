@@ -49,6 +49,17 @@ public class GameManger : MonoBehaviour
 		dealerScript.StartHand();
 		//The function that allows the score being updated
 		scoreText.text = "Hand: " + PlayerScript.handValue.ToString();
+		dealerScoreText.text = "Hand: " + dealerScript.handValue.ToString();
+		// Adjust buttons dealBtm visibility
+		dealBtn.gameObject.SetActive(false);
+		hitBtn.gameObject.SetActive(true);
+		standBtm.gameObject.SetActive(true);
+		standBtmText.text = "Stand";
+		// set standard pot size
+		pot = 40;
+		betsText.text = pot.ToString();
+		//PlayerScript.AdjustMoney(-20);
+		//cashText.text = PlayerScript.GetMoney().ToString();
 	}
 	void hitClicked()
 	{
