@@ -12,12 +12,26 @@ public class GameManger : MonoBehaviour
 	public Button standBtm;
 	public Button betBtn;
 	public Text standBtmText;
+	
 
 	private int standClicks = 0;
+	
 	
 	// access the players hand as well as the dealer
 	public PlayerScript PlayerScript;
 	public PlayerScript dealerScript;
+	
+	//public text to access and update
+	public Text scoreText;
+	public Text dealerScoreText;
+	public Text betsText;
+	public Text cashText;
+	// public Text mainText
+	
+	// Card hidden 2nd card
+	public GameObject hideCard;
+	//how much is bet
+	public int pot = 0;
 
 	// Use this for initialization
 	public void Start()
@@ -29,9 +43,12 @@ public class GameManger : MonoBehaviour
 
 	void dealClicked()
 	{
+		dealerScoreText.gameObject.SetActive(false); //hides the dealers hand at the start
 		GameObject.Find("Deck").GetComponent<Deck>().cardShuffle();
 		PlayerScript.StartHand();
 		dealerScript.StartHand();
+		//The function that allows the score being updated
+		scoreText.text = "Hand: " + PlayerScript.handValue.ToString();
 	}
 	void hitClicked()
 	{
