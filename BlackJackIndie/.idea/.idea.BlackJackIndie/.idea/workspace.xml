@@ -23,8 +23,8 @@
         <option value="$PROJECT_DIR$/Assets/GameManger.cs" />
         <option value="$PROJECT_DIR$/Assets/CardScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Deck.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManger.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayerScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManger.cs" />
       </list>
     </option>
   </component>
@@ -107,6 +107,7 @@
       <workItem from="1646077467993" duration="3220000" />
       <workItem from="1646106393332" duration="2675000" />
       <workItem from="1646204926171" duration="1407000" />
+      <workItem from="1647045339062" duration="1278000" />
     </task>
     <servers />
   </component>

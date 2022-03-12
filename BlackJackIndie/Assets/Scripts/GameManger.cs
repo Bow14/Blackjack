@@ -75,9 +75,7 @@ public class GameManger : MonoBehaviour
 		if (standClicks > 1) Debug.Log("End function");
 		hitDealer();
 		standBtmText.text = "Call";
-		{
-			
-		}
+	
 	}
 
 	private void hitDealer()
@@ -86,6 +84,24 @@ public class GameManger : MonoBehaviour
 		{
 			dealerScript.getCard();
 			//dealerscore
+		}
+	}
+	
+	// Check winner and loser
+	void roundEnd()
+	{
+		// Bools that bust for blackjack
+		bool playerBust = PlayerScript.handValue > 21;
+		bool dealerBust = dealerScript.handValue > 21;
+		bool player21 = PlayerScript.handValue == 21;
+		bool dealer21 = dealerScript.handValue == 21;
+		
+		// if statment for stand beeing clicked less than twice no 21s or bust quit
+		if (standClicks < 2 && !playerBust && dealerBust && !player21 && dealer21) return;
+		bool roundOver = true;
+		if (playerBust && dealerBust)
+		{
+			
 		}
 	}
 }
