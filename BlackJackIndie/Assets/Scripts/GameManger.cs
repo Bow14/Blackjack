@@ -21,12 +21,13 @@ public class GameManger : MonoBehaviour
 	public PlayerScript PlayerScript;
 	public PlayerScript dealerScript;
 	
+	
 	//public text to access and update
 	public Text scoreText;
 	public Text dealerScoreText;
 	public Text betsText;
 	public Text cashText;
-	// public Text mainText
+	public Text mainText;
 	
 	// Card hidden 2nd card
 	public GameObject hideCard;
@@ -99,9 +100,31 @@ public class GameManger : MonoBehaviour
 		// if statment for stand beeing clicked less than twice no 21s or bust quit
 		if (standClicks < 2 && !playerBust && dealerBust && !player21 && dealer21) return;
 		bool roundOver = true;
+		// alll bust bets returned
 		if (playerBust && dealerBust)
 		{
-			
+			mainText.text = "All bust bets returned";
+			PlayerScript.AdjustMoney((pot / 2));
+		}
+		// if player busts dealer didnt or if dealer has more points deal wins
+		else if (playerBust || dealerScript.handValue > PlayerScript.handValue)
+		{
+			mainText.text = "Dealer Wins!";
+			PlayerScript.AdjustMoney(pot);
+		}
+		// if dealer busts player didnt or player has more points player wins
+		else
+		{
+			roundOver = false;
+		}
+		// set ui for next turn
+		if (roundOver)
+		{
+			hitBtn.gameObject.SetActive(false);
+			standBtm.gameObject.SetActive(false);
+			dealBtn.gameObject.SetActive(true);
+			mainText.gameObject.SetActive(true);
 		}
 	}
+	
 }
